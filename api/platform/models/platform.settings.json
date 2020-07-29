@@ -18,6 +18,10 @@
       "type": "uid",
       "targetField": "name",
       "required": true
+    },
+    "games": {
+      "via": "platforms",
+      "collection": "game"
     }
   }
 }

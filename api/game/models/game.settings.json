@@ -64,6 +64,25 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "categories": {
+      "collection": "category",
+      "via": "games",
+      "dominant": true
+    },
+    "developers": {
+      "collection": "developer",
+      "via": "games",
+      "dominant": true
+    },
+    "platforms": {
+      "collection": "platform",
+      "via": "games",
+      "dominant": true
+    },
+    "publisher": {
+      "model": "publisher",
+      "via": "games"
     }
   }
 }
