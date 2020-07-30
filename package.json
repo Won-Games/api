@@ -11,17 +11,20 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^21.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "knex": "<0.20.0",
+    "pg": "latest",
     "strapi": "3.1.2",
     "strapi-admin": "3.1.2",
-    "strapi-utils": "3.1.2",
-    "strapi-plugin-content-type-builder": "3.1.2",
-    "strapi-plugin-content-manager": "3.1.2",
-    "strapi-plugin-users-permissions": "3.1.2",
-    "strapi-plugin-email": "3.1.2",
-    "strapi-plugin-upload": "3.1.2",
     "strapi-connector-bookshelf": "3.1.2",
-    "knex": "<0.20.0",
-    "pg": "latest"
+    "strapi-plugin-content-manager": "3.1.2",
+    "strapi-plugin-content-type-builder": "3.1.2",
+    "strapi-plugin-email": "3.1.2",
+    "strapi-plugin-graphql": "3.1.2",
+    "strapi-plugin-upload": "3.1.2",
+    "strapi-plugin-users-permissions": "3.1.2",
+    "strapi-utils": "3.1.2"
   },
   "author": {
     "name": "A Strapi developer"
