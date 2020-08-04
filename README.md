@@ -43,4 +43,5 @@ $ curl -X POST http://localhost:1337/games/populate
 # you can pass query parameters like:
 $ curl -X POST http://localhost:1337/games/populate?page=2
 $ curl -X POST http://localhost:1337/games/populate?search=simcity
+$ curl -X POST http://localhost:1337/games/populate?sort=rating&price=free
 ```
