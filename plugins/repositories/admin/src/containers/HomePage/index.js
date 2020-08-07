@@ -20,7 +20,7 @@ const HomePage = () => {
       .get("https://api.github.com/users/React-avancado/repos")
       .then((res) => setRows(res.data))
       .catch((e) => strapi.notification.error(`Ops...github API error, ${e}`));
-  });
+  }, []);
 
   const headers = [
     {
@@ -43,7 +43,11 @@ const HomePage = () => {
         title={{ label: "React Avançado Repositories" }}
         content="A list of our repositories in React Avançado course."
       />
-      <Table headers={headers} rows={rows} />
+      <Table
+        headers={headers}
+        rows={rows}
+        onClickRow={(data) => window.open(data.html_url, "_blank")}
+      />
     </Wrapper>
   );
 };
