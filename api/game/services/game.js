@@ -114,7 +114,7 @@ async function setImage({ image, game, field = "cover" }) {
         "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
       },
     });
-  } catch (error) {
+  } catch (e) {
     console.log("setImage", Exception(e));
   }
 }
