@@ -46,7 +46,7 @@ const HomePage = () => {
       <Table
         headers={headers}
         rows={rows}
-        onClickRow={(data) => window.open(data.html_url, "_blank")}
+        onClickRow={(e, data) => window.open(data.html_url, "_blank")}
       />
     </Wrapper>
   );
