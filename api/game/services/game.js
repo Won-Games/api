@@ -70,11 +70,11 @@ async function createManyToManyData(products) {
   products.forEach((product) => {
     const { developer, publisher, genres, supportedOperatingSystems } = product;
 
-    genres?.forEach((item) => {
+    genres && genres.forEach((item) => {
       categories.add(item);
     });
 
-    supportedOperatingSystems?.forEach((item) => {
+    supportedOperatingSystems && supportedOperatingSystems.forEach((item) => {
       platforms.add(item);
     });
 
