@@ -1190,17 +1190,12 @@
   dependencies:
     sift "^13.0.0"
 
-"@ckeditor/ckeditor5-build-classic@^21.0.0":
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-build-classic/-/ckeditor5-build-classic-21.0.0.tgz#f34624fa28edbc4de917eee326db7de1f09c9c63"
-  integrity sha512-IYPXmc5Np7SzJVJbGNZk3OZEHnZ/WylbN1aFyfYdKMch9Be8mrCB9QQOqfsAEKD4SjXujYvn1jL0mM/EPZ8ECw==
-
-"@ckeditor/ckeditor5-react@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-react/-/ckeditor5-react-2.1.0.tgz#f612546a5a328899a436d71b72ffd632600049e8"
-  integrity sha512-rlHjRKhwP9tNK0Yj2UJShL14mRfxLPgJ+Pv6zTv/Mvmd4wrwGnJf+5ybOAGK92S02hP1cXH+9km+PRO1b4V+ng==
+"@ckeditor/ckeditor5-react@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-react/-/ckeditor5-react-3.0.0.tgz#05a1bdd7b26a8c1df6fd734376ea84e394d6ab47"
+  integrity sha512-kqoD0rbGeUp7CjYBtKcwXVVSWO/VL1QsoTyeGbFyoMHmkM96fBj0TI0Xs2kFqKkeiICtAnwvul3GVNWbIlK/Tw==
   dependencies:
-    prop-types "^15.6.1"
+    prop-types "^15.7.2"
 
 "@emotion/cache@^10.0.27", "@emotion/cache@^10.0.9":
   version "10.0.29"
@@ -3253,6 +3248,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+ckeditor5-build-strapi-wysiwyg@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/ckeditor5-build-strapi-wysiwyg/-/ckeditor5-build-strapi-wysiwyg-0.2.1.tgz#9b569e531bfa00c83ad5d6735759662fb74a42d0"
+  integrity sha512-C5u/68oj0NlslRBGBG7btsl1sxl48rfFRaQQO3vxGPaG2BYpNSVDeo6uqECT6qCTxsI4rnqnJ8DBX9sgyXIM0Q==
 
 class-utils@^0.3.5:
   version "0.3.6"
@@ -10387,6 +10387,14 @@ strapi-helper-plugin@3.4.1:
     reactstrap "8.4.1"
     styled-components "^5.0.0"
     whatwg-fetch "^3.5.0"
+
+strapi-plugin-ckeditor5@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-ckeditor5/-/strapi-plugin-ckeditor5-0.1.4.tgz#3db46b645c5bd30b8d54bc078813161b75e2c04b"
+  integrity sha512-OM2/GpUWx69I7gg+JYL/KAngW713zXLtvOfLUgBrvi7WiAn7OiaYqXeI3ggqXHXcmrSDAqTebUuZIdgsrr+AVg==
+  dependencies:
+    "@ckeditor/ckeditor5-react" "^3.0.0"
+    ckeditor5-build-strapi-wysiwyg "^0.2.1"
 
 strapi-plugin-content-manager@3.4.1:
   version "3.4.1"
