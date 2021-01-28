@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_page_highlights",
+  "info": {
+    "name": "highlight",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "floatImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "buttonLabel": {
+      "type": "string",
+      "required": true
+    },
+    "buttonLink": {
+      "type": "string",
+      "required": true
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "right"
+    }
+  }
+}

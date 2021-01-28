@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_sections",
+  "info": {
+    "name": "section",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "highlight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.highlight"
+    }
+  }
+}
