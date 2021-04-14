@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "games": {
+      "collection": "game"
+    },
+    "total_in_cents": {
+      "type": "string",
+      "required": true
+    },
+    "payment_intent_id": {
+      "type": "string"
+    },
+    "card_brand": {
+      "type": "string"
+    },
+    "card_last4": {
+      "type": "string"
+    }
+  }
+}
