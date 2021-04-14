@@ -26,6 +26,14 @@
     },
     {
       "method": "POST",
+      "path": "/orders/create-payment-intent",
+      "handler": "order.createPaymentIntent",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
       "path": "/orders",
       "handler": "order.create",
       "config": {
