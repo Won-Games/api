@@ -27,7 +27,6 @@ const total = async (games) => {
     return acc + game.price;
   }, 0);
 
-  518.39123 * 100 === 51839;
   return Number((amount * 100).toFixed(0));
 };
 
