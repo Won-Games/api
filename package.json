@@ -22,6 +22,7 @@
     "strapi-plugin-content-manager": "3.4.4",
     "strapi-plugin-content-type-builder": "3.4.4",
     "strapi-plugin-email": "3.4.4",
+    "strapi-plugin-email-designer": "^0.3.0",
     "strapi-plugin-entity-relationship-chart": "3.1.0",
     "strapi-plugin-graphql": "3.4.4",
     "strapi-plugin-upload": "3.4.4",
