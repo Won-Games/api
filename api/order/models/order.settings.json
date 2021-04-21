@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "orders",
   "info": {
-    "name": "Order"
+    "name": "Order",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,10 +18,6 @@
     "games": {
       "collection": "game"
     },
-    "total_in_cents": {
-      "type": "string",
-      "required": true
-    },
     "payment_intent_id": {
       "type": "string"
     },
@@ -29,6 +26,9 @@
     },
     "card_last4": {
       "type": "string"
+    },
+    "total_in_cents": {
+      "type": "biginteger"
     }
   }
 }
