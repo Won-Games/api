@@ -25,6 +25,7 @@
     "strapi-plugin-email-designer": "^0.3.0",
     "strapi-plugin-entity-relationship-chart": "3.1.0",
     "strapi-plugin-graphql": "3.4.4",
+    "strapi-plugin-sync-roles-permissions": "^0.4.2",
     "strapi-plugin-upload": "3.4.4",
     "strapi-plugin-users-permissions": "3.4.4",
     "strapi-provider-email-nodemailer": "^3.5.3",
