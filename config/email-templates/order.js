@@ -14,7 +14,7 @@ const text = `
   Games:
 
   <% _.forEach(games, function(game) { %>
-    <%= game.name %> - Price: $<%= game.price %>
+    <%= game.name %> - Price: $<%= Number(game.price).toFixed(2) %>
   <% }); %>
 `;
 
