@@ -48,3 +48,28 @@ $ curl -X POST http://localhost:1337/games/populate?search=simcity
 $ curl -X POST http://localhost:1337/games/populate?sort=rating&price=free
 $ curl -X POST http://localhost:1337/games/populate?availability=coming&sort=popularity
 ```
+
+## Using dump
+
+I recommend [populating the data](#populate-data) as above but if you are having issues, you can use a generated dump.
+In order to do that, you need:
+
+1. Create a Postgres database and user:
+
+```sh
+CREATE USER wongames WITH ENCRYPTED PASSWORD 'wongames123';
+CREATE DATABASE wongames OWNER wongames;
+```
+
+2. Populate the new database, using the following command:
+
+```sh
+psql -h localhost -p 5432 -U wongames wongames < dump.sql
+```
+
+And you can access `localhost:1337/admin` with the following credentials:
+
+```sh
+email: wongames@wongames.com
+password: Wongames123
+```
