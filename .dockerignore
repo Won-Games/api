@@ -1,0 +1,15 @@
+**/.DS_Store
+**/Dockerfile
+**/node_modules/
+*.sql
+.vscode
+.dockerignore
+.env
+.git/
+.github/
+.idea/
+.gitignore
+.eslint*
+CHANGELOG.md
+LICENSE.md
+README.md
