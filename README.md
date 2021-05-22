@@ -51,8 +51,7 @@ $ curl -X POST http://localhost:1337/games/populate?availability=coming&sort=pop
 
 ## Using dump
 
-I recommend [populating the data](#populate-data) as above but if you are having issues, you can use a generated dump.
-In order to do that, you need:
+First of all, you need to download our [dump.sql](https://github.com/Won-Games/database/raw/master/dump.sql) from our [database repository](https://github.com/Won-Games/database).
 
 1. Create a Postgres database and user:
 
@@ -61,7 +60,7 @@ CREATE USER wongames WITH ENCRYPTED PASSWORD 'wongames123';
 CREATE DATABASE wongames OWNER wongames;
 ```
 
-2. Populate the new database, using the following command:
+2. Populate the new database, using the following command (remember to point the place where you have the `dump.sql`):
 
 ```sh
 psql -h localhost -p 5432 -U wongames wongames < dump.sql
