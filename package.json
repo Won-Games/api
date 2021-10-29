@@ -13,7 +13,8 @@
   "dependencies": {
     "jsdom": "^16.5.3",
     "knex": "0.95.6",
-    "pg": "8.6.0",
+    "pg": "^8.7.1",
+    "pg-connection-string": "^2.5.0",
     "slugify": "^1.5.3",
     "strapi": "3.6.2",
     "strapi-admin": "3.6.2",
