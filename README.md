@@ -40,13 +40,13 @@ In order to make it work, follow the steps:
 - With Strapi running run the following comand in your console:
 
 ```bash
-$ curl -X POST http://localhost:1337/games/populate
+$ curl -X POST http://localhost:1337/api/games/populate
 
 # you can pass query parameters like:
-$ curl -X POST http://localhost:1337/games/populate?page=2
-$ curl -X POST http://localhost:1337/games/populate?search=simcity
-$ curl -X POST http://localhost:1337/games/populate?sort=rating&price=free
-$ curl -X POST http://localhost:1337/games/populate?availability=coming&sort=popularity
+$ curl -X POST http://localhost:1337/api/games/populate?page=2
+$ curl -X POST http://localhost:1337/api/games/populate?search=simcity
+$ curl -X POST http://localhost:1337/api/games/populate?sort=rating&price=free
+$ curl -X POST http://localhost:1337/api/games/populate?availability=coming&sort=popularity
 ```
 
 ## Using dump
